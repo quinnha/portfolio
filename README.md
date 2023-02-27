@@ -1,3 +1,3 @@
-![landing page](https://github.com/quinnha/portfolio/blob/main/public/static/readme_img.PNG)
+![landing page](https://github.com/quinnha/portfolio/blob/main/public/static/landing.png)
 
 just my little corner of the internet :)
