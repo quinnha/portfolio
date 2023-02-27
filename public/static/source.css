@@ -33,7 +33,7 @@ hr.dashed {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    min-height: calc(100vh/3);
+    min-height: calc(50vh/3);
     /* flex-basis: calc(100%/3); */
     align-items: center;
 }
