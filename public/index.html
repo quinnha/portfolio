@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 
-
 <title>quinn's home (≧∇≦)/</title>
 
 <body>
@@ -24,6 +23,7 @@
                     <a href="about.html" class = "nav_element">about</a> <br>
                     <a href="projects.html" class = "nav_element">projects</a> <br>
                     <a href="resume.html" class = "nav_element">resume</a>
+                    <a onclick="toggleTheme();" class = "theme_toggle" style = "cursor: pointer;"></a>
                 </nav>
             </div>
 
@@ -48,7 +48,6 @@
                 </p>
                 <p style= "font-size: small; margin-top: -10px;">inspired by <a href="https://www.tiffanywang.me/" class = "clickable">tiffany</a></p>
 
-
             </div>
 
         </div>
@@ -59,47 +58,7 @@
 
 </body>
 
-<script>
-    function clicking_through(id){
-        const list_hobbies = [
-        "singing with my ukulele",
-        "writing poetry on my substack",
-        "brewing coffee with my v60",
-        "cafe hopping around the city",
-        "pretending to be busy",
-        "walking through cities",
-        "smashing birdies on the court",
-        "shredding a mountain on my snowboard",
-        "playing pump it up",
-        "cooking mapo tofu",
-        "walking through art galleries",
-        "drafting up new songs",
-        "bar hopping through neighbourhoods",
-        "watching super smash bros melee",
-        "trying to get on top of another mountain",
-        "crafting a new spotify playlist"
-        ];
-        const places = [
-            "corner",
-            "fragment",
-            "sliver",
-            "pocket",
-            "section",
-            "node"
-        ]
-        if (id == 0){
-            const randomIndex = Math.floor(Math.random() * list_hobbies.length);
-            const item = list_hobbies[randomIndex];
-            document.getElementById("hobbies").innerHTML = item;
-        }
-        else if (id == 1){
-            const randomIndex = Math.floor(Math.random() * places.length);
-            const item = places[randomIndex];
-            document.getElementById("corner").innerHTML = item;
-        }
-    }
-    
-</script>
-
+<script src="click_through.js"></script>
+<script src="colour_mode.js"></script>
 
 </html>

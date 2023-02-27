@@ -1,5 +1,30 @@
+:root {
+    --background-primary: #E2FDFF;
+    --color-primary: black;
+  }
+  
+  html[data-theme='dark'] {
+    --background-primary: #030303;
+    --color-primary: #ccc;
+  }
+  
+  html {
+    /* transition: color 300ms, background-color 300ms; */
+    background: var(--background-primary);
+    color: var(--color-primary);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  h1, h2, p {
+    color: var(--color-primary);
+  }
+
+
 body {
-    background-color: #E2FDFF;
+    background-color: var(--background-primary);
+    color: var(--color-primary);
     font-family: 'Roboto Mono';
     font-weight: 400;
     overflow-y: scroll;
@@ -13,12 +38,13 @@ body::-webkit-scrollbar {
     height: 0;
   }
 
-a, a:visited, a:active{
+a, a:visited, a:active, .theme_toggle, .theme_toggle:visited, .theme_toggle:active {
     text-decoration: none;
-    color: black;
+    color: var(--color-primary);
+
 }
 
-a:hover{
+a:hover, .theme_toggle:hover{
     color: #9BB1FF;
 }
 
@@ -62,12 +88,13 @@ hr.dashed {
     /* border: 1px solid black; */
 }
 
-.clickable, .clickable:visited, .clickable:active {
+.clickable, .clickable:visited, .clickable:active{
     cursor: pointer;
     text-decoration: underline;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     line-height: normal;
+    color: var(--color-primary);
 }
 
