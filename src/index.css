@@ -1,3 +1,9 @@
+:root {
+  --background-primary: #E2FDFF;
+  --color-primary: black;
+  --color-dash: #99acad;
+}
+
 .sun {
   --background-primary: #E2FDFF;
   --color-primary: black;
