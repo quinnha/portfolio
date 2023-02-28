@@ -1,64 +1,43 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="static/source.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<title>quinn's home (≧∇≦)/</title>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>quinn;s portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<body>
-    <div class = "flex-container" id = "outer"></div>
-    <div class = "flex-container" id = "outer">
-        
-        <div class = "flex-container" id = "inner"></div>
-        
-        <div class = "flex-container" id = "inner">
-            
-            <div class = "flex-container" id = "nav_bar">
-                <br>
-                <nav>
-                    <a href="index.html" class = "nav_element" style = "color: #9BB1FF">home</a> <br>
-                    <a href="about.html" class = "nav_element">about</a> <br>
-                    <a href="projects.html" class = "nav_element">projects</a> <br>
-                    <a href="resume.html" class = "nav_element">resume</a>
-                    <a onclick="toggleTheme();" class = "theme_toggle" style = "cursor: pointer;"></a>
-                </nav>
-            </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-            <div class = "flex-container" id = "content">
-                <h2>i'm quinn!</h2>
-                <p>welcome to my little <a class = "clickable" id = "corner" onclick = "clicking_through(1)">corner</a> 
-                    of the internet!</p>
-                <p>
-                    i'm a student based in Toronto &#127809; where i study software engineering.
-                    when i'm not coding, i'm learning about accessibility, reading manga, and 
-                    <a class = "clickable" id = "hobbies" onclick = "clicking_through(0)">walking through art galleries</a>.
-                </p>
-                <p>reach out to me anytime at quinnha.hello@gmail.com</p>
-
-                <hr class="dashed">
-                <p>
-                    <a href="https://www.linkedin.com/in/quinn-ha/" class="fa fa-linkedin fa-lg"></a>
-                    <a href="https://github.com/quinnha" class="fa fa-github fa-lg"></a>
-                    <a href="https://twitter.com/qvinnh" class="fa fa-twitter fa-lg"></a>
-                    <a href="https://www.instagram.com/qh.music/" class="fa fa-instagram fa-lg"></a>
-                    <a href="https://sesamebagel.substack.com/" class="fa fa-bookmark fa-lg"></a>
-                </p>
-                <p style= "font-size: small; margin-top: -10px;">inspired by <a href="https://www.tiffanywang.me/" class = "clickable">tiffany</a></p>
-
-            </div>
-
-        </div>
-
-        <div class = "flex-container" id = "inner"></div>
-    </div>
-    <div class = "flex-container" id = "outer"></div>
-
-</body>
-
-<script src="click_through.js"></script>
-<script src="colour_mode.js"></script>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
