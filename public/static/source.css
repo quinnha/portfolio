@@ -9,18 +9,19 @@
   }
   
   html {
-    /* transition: color 300ms, background-color 300ms; */
     background: var(--background-primary);
     color: var(--color-primary);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
   }
   
   h1, h2, p {
     color: var(--color-primary);
   }
 
+  @media (hover: none) {
+    .my-theme_toggle {
+        color: var(--color-primary);
+    }
+}
 
 body {
     background-color: var(--background-primary);
