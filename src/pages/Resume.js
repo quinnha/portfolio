@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
 
 
 function Resume() {

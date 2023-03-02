@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Resume from "./Resume";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
@@ -27,7 +27,7 @@ function App() {
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
       />
 
-<div class="flex-container" id="outer" />
+      <div class="flex-container" id="outer" />
       <div class="flex-container" id="outer">
         <div class="flex-container" id="inner"></div>
 
@@ -38,15 +38,15 @@ function App() {
           </div>
 
           <div class="flex-container" id="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="resume" element={<Resume />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="resume" element={<Resume />} />
+            </Routes>
 
             <hr class="dashed" />
-            <Footer/>
+            <Footer />
           </div>
         </div>
 
@@ -54,7 +54,7 @@ function App() {
       </div>
       <div class="flex-container" id="outer" />
 
-      
+
     </div>
   );
 }
