@@ -21,13 +21,15 @@ html {
   color: var(--color-primary);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: var(--color-primary);
 }
 
 @media (hover: none) {
   .my-theme_toggle {
-      color: var(--color-primary);
+    color: var(--color-primary);
   }
 }
 
@@ -37,8 +39,10 @@ body {
   font-family: 'Roboto Mono';
   font-weight: 400;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -47,13 +51,19 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
-a, a:visited, a:active, .theme_toggle, .theme_toggle:visited, .theme_toggle:active {
+a,
+a:visited,
+a:active,
+.theme_toggle,
+.theme_toggle:visited,
+.theme_toggle:active {
   text-decoration: none;
   color: var(--color-primary);
 
 }
 
-a:hover, .theme_toggle:hover{
+a:hover,
+.theme_toggle:hover {
   color: #9BB1FF;
   cursor: pointer;
 }
@@ -85,7 +95,7 @@ hr.dashed {
   align-items: flex-start;
 }
 
-#nav_bar{
+#nav_bar {
   /* border: 1px solid #9BB1FF; */
   text-align: right;
   max-width: max-content;
@@ -94,7 +104,7 @@ hr.dashed {
   line-height: 35px;
 }
 
-.nav_element{
+.nav_element {
   color: #9BB1FF !important;
 }
 
@@ -104,7 +114,9 @@ hr.dashed {
   /* border: 1px solid black; */
 }
 
-.clickable, .clickable:visited, .clickable:active{
+.clickable,
+.clickable:visited,
+.clickable:active {
   cursor: pointer;
   text-decoration: underline;
   -moz-user-select: none;
@@ -114,23 +126,26 @@ hr.dashed {
   color: var(--color-primary);
 }
 
-.clickable:hover, .credit:hover{
+.clickable:hover,
+.credit:hover {
   color: #9BB1FF !important;
 }
 
-.credit, .credit:visited, .credit:active {
+.credit,
+.credit:visited,
+.credit:active {
   cursor: pointer;
-    text-decoration: underline;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    line-height: normal;
-    color: var(--color-primary);
+  text-decoration: underline;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  line-height: normal;
+  color: var(--color-primary);
 
 }
 
-.credit_p{
-  font-size: small; 
+.credit_p {
+  font-size: small;
   margin-top: -10px;
 }
 

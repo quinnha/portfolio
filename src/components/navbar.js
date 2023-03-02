@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useTheme from "../theme";
 import { CSSTransition } from "react-transition-group";
 
 function NavBar() {
   const [theme, toggleTheme] = useTheme();
-
-  const [tick, setTick] = useState(true);
+  const [visible, setVisible] = useState(true);
 
   const handleThemeChange = () => {
-    setTick(!tick);
     toggleTheme();
+    setVisible(false);
+    setTimeout(() => setVisible(true), 0);
   };
 
   return (
@@ -22,13 +22,12 @@ function NavBar() {
         <NavLink to="/projects">projects</NavLink> <br />
         <NavLink to="/resume">resume</NavLink> <br />
         <CSSTransition
-          in={tick}
+          in={visible}
           appear={true}
           timeout={500}
-          classNames="fadein"
-          unmountOnExit={false}
+          classNames="fadeIn"
         >
-          <a onClick={handleThemeChange} class="theme_toggle">
+          <a onClick={handleThemeChange} className="fadeIn">
             {theme}
           </a>
         </CSSTransition>

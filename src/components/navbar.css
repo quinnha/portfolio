@@ -1,3 +1,22 @@
-.active{
+.active {
     color: #9BB1FF !important;
+}
+
+.fadeIn-enter {
+    opacity: 0;
+
+}
+
+.fadeIn-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.fadeIn-exit {
+    opacity: 0;
+}
+
+.fadeIn-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
 }
