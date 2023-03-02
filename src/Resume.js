@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import { useState, useEffect } from "react";
-import useTheme from "./theme";
+import NavBar from "./components/navbar";
+import { CSSTransition } from "react-transition-group";
 
 function Resume() {
   useEffect(() => {
     document.title = "quinn's resume (๑•̀ㅁ•́๑)✧";
   }, []);
-
-  const [theme, toggleTheme] = useTheme();
-
-  const handleThemeChange = () => {
-    toggleTheme();
-  };
 
   return (
     <div>
@@ -23,18 +18,7 @@ function Resume() {
         <div class="flex-container" id="inner">
           <div class="flex-container" id="nav_bar">
             <br />
-            <nav>
-              <Link to="/">home</Link> <br />
-              <Link to="/about">about</Link> <br />
-              <Link to="/projects">projects</Link> <br />
-              <Link to={{}} class="nav_element">
-                resume
-              </Link>{" "}
-              <a onClick={handleThemeChange} class="theme_toggle">
-                {theme}
-              </a>
-              <br />
-            </nav>
+            <NavBar></NavBar>
           </div>
 
           <div class="flex-container" id="content">

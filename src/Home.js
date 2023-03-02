@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import { useState, useEffect } from "react";
 import useTheme from "./theme";
+import { CSSTransition } from "react-transition-group";
+import NavBar from "./components/navbar";
 
 const hobbies = [
   "playing my ukulele",
@@ -46,12 +48,6 @@ function Home() {
   const [currentHobby, handleHobbyClick] = useWordCycle(hobbies);
   const [currentSpace, handleSpaceClick] = useWordCycle(space);
 
-  const [theme, toggleTheme] = useTheme();
-
-  const handleThemeChange = () => {
-    toggleTheme();
-  };
-
   return (
     <div>
       <div class="flex-container" id="outer" />
@@ -61,18 +57,7 @@ function Home() {
         <div class="flex-container" id="inner">
           <div class="flex-container" id="nav_bar">
             <br />
-            <nav>
-              <Link to="/" class="nav_element">
-                home
-              </Link>{" "}
-              <br />
-              <Link to="/about">about</Link> <br />
-              <Link to="/projects">projects</Link> <br />
-              <Link to="/resume">resume</Link> <br />
-              <a onClick={handleThemeChange} class="theme_toggle">
-                {theme}
-              </a>
-            </nav>
+            <NavBar></NavBar>
           </div>
 
           <div class="flex-container" id="content">
