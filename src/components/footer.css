@@ -1,0 +1,7 @@
+hr.dashed {
+    border-top: 2px dashed;
+    max-width: 100%;
+    margin-left: 0;
+    border-color: var(--color-dash);
+    border-bottom: 0px;
+}

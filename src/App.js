@@ -45,7 +45,6 @@ function App() {
               <Route path="resume" element={<Resume />} />
             </Routes>
 
-            <hr class="dashed" />
             <Footer />
           </div>
         </div>
