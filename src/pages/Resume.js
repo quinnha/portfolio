@@ -15,7 +15,7 @@ function Resume() {
       <iframe
         src="https://drive.google.com/file/d/1mxEIbpHfVnL6Hh0CDMrYpXJvFoY7CAgn/preview"
         width="640"
-        height="850"
+        height="825"
         allow="autoplay"
       ></iframe>
 
