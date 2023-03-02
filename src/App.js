@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Resume from "./Resume";
+import "./index.css";
 
 function App() {
   return (
