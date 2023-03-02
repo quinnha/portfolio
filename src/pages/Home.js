@@ -19,7 +19,19 @@ const hobbies = [
   "crafting a new spotify playlist",
 ];
 
-const space = ["corner", "fragment", "sliver", "pocket", "section", "node"];
+const space = [
+  "corner",
+  "fragment",
+  "sliver",
+  "pocket",
+  "section",
+  "node",
+  "slice",
+  "shard",
+  "bit",
+  "piece",
+  "string"
+];
 
 function useWordCycle(words) {
   const [currentWord, setCurrentWord] = useState(
