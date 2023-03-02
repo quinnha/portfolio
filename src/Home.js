@@ -47,44 +47,24 @@ function Home() {
 
   return (
     <div>
-      <div class="flex-container" id="outer" />
-      <div class="flex-container" id="outer">
-        <div class="flex-container" id="inner"></div>
-
-        <div class="flex-container" id="inner">
-          <div class="flex-container" id="nav_bar">
-            <br />
-            <NavBar></NavBar>
-          </div>
-
-          <div class="flex-container" id="content">
-            <h2>i'm quinn!</h2>
-            <p>
-              welcome to my little{" "}
-              <a class="clickable" id="corner" onClick={handleSpaceClick}>
-                {currentSpace}
-              </a>{" "}
-              of the internet!
-            </p>
-            <p>
-              i'm a student based in Toronto &#127809; where i study software
-              engineering. when i'm not coding, i'm learning about
-              accessibility, reading manga, and{" "}
-              <a class="clickable" id="hobbies" onClick={handleHobbyClick}>
-                {currentHobby}
-              </a>
-              .
-            </p>
-            <p>reach out to me anytime at quinnha.hello@gmail.com</p>
-
-            <hr class="dashed" />
-            <Footer/>
-          </div>
-        </div>
-
-        <div class="flex-container" id="inner" />
-      </div>
-      <div class="flex-container" id="outer" />
+      <h2>i'm quinn!</h2>
+      <p>
+        welcome to my little{" "}
+        <a class="clickable" id="corner" onClick={handleSpaceClick}>
+          {currentSpace}
+        </a>{" "}
+        of the internet!
+      </p>
+      <p>
+        i'm a student based in Toronto &#127809; where i study software
+        engineering. when i'm not coding, i'm learning about
+        accessibility, reading manga, and{" "}
+        <a class="clickable" id="hobbies" onClick={handleHobbyClick}>
+          {currentHobby}
+        </a>
+        .
+      </p>
+      <p>reach out to me anytime at quinnha.hello@gmail.com</p>
     </div>
   );
 }

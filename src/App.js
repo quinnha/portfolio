@@ -5,6 +5,9 @@ import About from "./About";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import "./index.css";
+import NavBar from "./components/navbar";
+import Footer from "./components/footer";
+
 
 function App() {
   return (
@@ -24,12 +27,34 @@ function App() {
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
       />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="resume" element={<Resume />} />
-      </Routes>
+<div class="flex-container" id="outer" />
+      <div class="flex-container" id="outer">
+        <div class="flex-container" id="inner"></div>
+
+        <div class="flex-container" id="inner">
+          <div class="flex-container" id="nav_bar">
+            <br />
+            <NavBar></NavBar>
+          </div>
+
+          <div class="flex-container" id="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="resume" element={<Resume />} />
+          </Routes>
+
+            <hr class="dashed" />
+            <Footer/>
+          </div>
+        </div>
+
+        <div class="flex-container" id="inner" />
+      </div>
+      <div class="flex-container" id="outer" />
+
+      
     </div>
   );
 }
