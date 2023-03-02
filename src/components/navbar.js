@@ -15,7 +15,7 @@ function NavBar() {
   };
 
   return (
-    <div class>
+    <div>
       <nav>
         <NavLink to="/">home</NavLink> <br />
         <NavLink to="/about">about</NavLink> <br />
