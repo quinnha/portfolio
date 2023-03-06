@@ -21,6 +21,9 @@ export default function QuinnAI() {
   const [clicks, setClicks] = useState(
     parseInt(localStorage.getItem("clicks")) || 0
   );
+  const [placeholder, setPlaceholder] = useState(
+    "what do you want to ask quinn ai?"
+  );
 
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY,
@@ -45,8 +48,14 @@ export default function QuinnAI() {
       const currentTime = Date.now();
       const HALF_DAY_IN_MS = 12 * 60 * 60 * 1000;
       if (lastClick && currentTime - lastClick < HALF_DAY_IN_MS) {
-        setInput("no more questions for today! come back another day :)");
+        setInput("no more questions for today!");
         setResult(goodbies[Math.floor(Math.random() * goodbies.length)]);
+        return;
+      }
+      if (clicks >= MAX_CLICKS) {
+        setCopyInput("no more questions for today!");
+        setResult(goodbies[Math.floor(Math.random() * goodbies.length)]);
+        setPlaceholder("no more questions for today!");
         return;
       }
       const response = await openai.createCompletion({
@@ -67,16 +76,11 @@ export default function QuinnAI() {
           new Error(`Request failed with status ${response.status}`)
         );
       }
-
       setResult(
         data.concat(endings[Math.floor(Math.random() * endings.length)])
       );
       setInput("");
       setClicks(clicks + 1);
-      if (clicks >= 5) {
-        localStorage.setItem("lastClick", currentTime);
-        setInput("no more questions for today! come back another day :)");
-      }
     } catch (error) {
       console.error(error);
       alert(error.message);
@@ -90,7 +94,7 @@ export default function QuinnAI() {
         <textarea
           type="text"
           name="prompt"
-          placeholder="what do you want to ask quinn ai?"
+          placeholder={placeholder}
           value={input}
           onChange={(e) => textInput(e)}
           maxLength="100"
@@ -98,8 +102,10 @@ export default function QuinnAI() {
         <div class="flex-box" id="form">
           <input
             type="submit"
-            value={`ask! (${MAX_CLICKS - clicks}/${MAX_CLICKS})`}
-            disabled={clicks >= 5}
+            value={`ask! (${
+              MAX_CLICKS - clicks > 0 ? MAX_CLICKS - clicks : 0
+            }/${MAX_CLICKS})`}
+            // disabled={clicks >= 5}
           />
           <p class="count"> {100 - count}/100</p>
         </div>
