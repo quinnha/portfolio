@@ -1,7 +1,6 @@
 import "./footer.css";
 
 function Footer() {
-
   return (
     <div>
       <hr class="dashed" />
@@ -40,7 +39,7 @@ function Footer() {
           {" "}
         </a>
       </p>
-      <p class="credit_p">
+      {/* <p class="credit_p">
         inspired by{" "}
         <a
           href="https://www.tiffanywang.me/"
@@ -49,7 +48,7 @@ function Footer() {
         >
           tiffany
         </a>
-      </p>
+      </p> */}
     </div>
   );
 }

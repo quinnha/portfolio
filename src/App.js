@@ -8,8 +8,17 @@ import QuinnAI from "./pages/QuinnAI";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "G-BR72D9JR60",
+};
+TagManager.initialize(tagManagerArgs);
 
 function App() {
+  window.dataLayer.push({
+    event: "pageview",
+  });
   return (
     <div className="App">
       <meta charset="UTF-8"></meta>
