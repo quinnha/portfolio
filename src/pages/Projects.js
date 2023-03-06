@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-
 function Projects() {
   useEffect(() => {
     document.title = "quinn's projects ( ´ ▽ ` )b";
@@ -8,17 +7,12 @@ function Projects() {
 
   return (
     <div>
-
       <p>
         some projects, find the rest on my{" "}
-        <a
-          href="https://github.com/quinnha"
-          class="clickable"
-          target="_blank"
-        >
+        <a href="https://github.com/quinnha" class="clickable" target="_blank">
           github
         </a>{" "}
-        (๑•̀ㅁ•́๑)✧
+        <nobr>(๑•̀ㅁ•́๑)✧</nobr>
       </p>
       <hr class="dashed" />
       <p>
@@ -90,9 +84,6 @@ function Projects() {
       <p>
         <i>(this page is a work in progress, pictures coming soon!)</i>
       </p>
-
-
-
     </div>
   );
 }

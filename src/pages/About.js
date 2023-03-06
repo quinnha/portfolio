@@ -8,7 +8,9 @@ function About() {
   return (
     <div>
       <img src="/me.jpg" alt="it's me!" width="200" height="auto" />
-      <p>─=≡Σ((( つ•̀ω•́)つLET’S GO!</p>
+      <p>
+        <nobr>─=≡Σ((( つ•̀ω•́)つLET’S GO!</nobr>
+      </p>
 
       <hr class="dashed" />
 
