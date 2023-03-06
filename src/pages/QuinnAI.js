@@ -3,6 +3,15 @@ const { Configuration, OpenAIApi } = require("openai");
 
 const MAX_CLICKS = 5;
 const endings = ["", "!", " :)", "!!", " xd", " :))"];
+const goodbies = [
+  "see ya soon big baboon!",
+  "see ya soon raccoon!",
+  "time to go, buffalo!",
+  "take care, teddy bear!",
+  "tood-a-loo kangaroo!",
+  "bye bye butterfly!",
+  "cya later alligator!",
+];
 
 export default function QuinnAI() {
   const [input, setInput] = useState("");
@@ -29,13 +38,17 @@ export default function QuinnAI() {
   }
 
   async function onSubmit(event) {
-    if (clicks >= 5) {
-      return;
-    }
-
     setCopyInput(input);
     event.preventDefault();
     try {
+      const lastClick = localStorage.getItem("lastClick");
+      const currentTime = Date.now();
+      const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000;
+      if (lastClick && currentTime - lastClick < ONE_DAY_IN_MS) {
+        setCopyInput("no more questions for today! come back another day :)");
+        setResult(goodbies[Math.floor(Math.random() * goodbies.length)]);
+        return;
+      }
       const response = await openai.createCompletion({
         model: "curie:ft-personal:400-questions-2023-03-05-22-44-00",
         prompt: input.concat("[PEND]"),
@@ -58,13 +71,9 @@ export default function QuinnAI() {
       setResult(
         data.concat(endings[Math.floor(Math.random() * endings.length)])
       );
-
       setInput("");
-      setClicks((prevClicks) => {
-        const newClicks = prevClicks + 1;
-        localStorage.setItem("clicks", newClicks);
-        return newClicks;
-      });
+      setClicks(clicks + 1);
+      localStorage.setItem("lastClick", currentTime);
     } catch (error) {
       console.error(error);
       alert(error.message);
