@@ -26,6 +26,10 @@ export default function QuinnAI() {
     localStorage.setItem("clickCount", clickCount);
   }, [clickCount]);
 
+  useEffect(() => {
+    document.title = "quinn's ai ⚈皿⚈";
+  }, []);
+
   function textInput(e) {
     setInput(e.target.value);
   }
