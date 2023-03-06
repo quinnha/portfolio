@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 const { Configuration, OpenAIApi } = require("openai");
 
 const MAX_CLICKS = 5;
+const endings = ["", "!", " :)", "!!", " xd", " :))"];
 
 export default function QuinnAI() {
   const [input, setInput] = useState("");
@@ -54,7 +55,10 @@ export default function QuinnAI() {
         );
       }
 
-      setResult(data.concat(" :)"));
+      setResult(
+        data.concat(endings[Math.floor(Math.random() * endings.length)])
+      );
+
       setInput("");
       setClicks((prevClicks) => {
         const newClicks = prevClicks + 1;
