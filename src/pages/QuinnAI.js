@@ -43,9 +43,9 @@ export default function QuinnAI() {
     try {
       const lastClick = localStorage.getItem("lastClick");
       const currentTime = Date.now();
-      const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000;
-      if (lastClick && currentTime - lastClick < ONE_DAY_IN_MS) {
-        setCopyInput("no more questions for today! come back another day :)");
+      const HALF_DAY_IN_MS = 12 * 60 * 60 * 1000;
+      if (lastClick && currentTime - lastClick < HALF_DAY_IN_MS) {
+        setInput("no more questions for today! come back another day :)");
         setResult(goodbies[Math.floor(Math.random() * goodbies.length)]);
         return;
       }
@@ -73,7 +73,10 @@ export default function QuinnAI() {
       );
       setInput("");
       setClicks(clicks + 1);
-      localStorage.setItem("lastClick", currentTime);
+      if (clicks >= 5) {
+        localStorage.setItem("lastClick", currentTime);
+        setInput("no more questions for today! come back another day :)");
+      }
     } catch (error) {
       console.error(error);
       alert(error.message);
