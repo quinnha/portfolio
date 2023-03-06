@@ -4,10 +4,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
+import QuinnAI from "./pages/QuinnAI";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
-
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="projects" element={<Projects />} />
               <Route path="resume" element={<Resume />} />
+              <Route path="quinn-ai" element={<QuinnAI />} />
             </Routes>
 
             <Footer />
@@ -52,8 +53,6 @@ function App() {
         <div class="flex-container" id="inner" />
       </div>
       <div class="flex-container" id="outer" />
-
-
     </div>
   );
 }

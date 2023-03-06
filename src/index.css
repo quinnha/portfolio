@@ -1,19 +1,28 @@
 :root {
   --background-primary: #E2FDFF;
   --color-primary: black;
+  --color-secondary: rgb(55, 55, 55);
   --color-dash: #99acad;
+  --background-reverse: #121212;
+  --color-reverse: #f5f7fa;
 }
 
 .sun {
   --background-primary: #E2FDFF;
   --color-primary: black;
+  --color-secondary: rgb(55, 55, 55);
   --color-dash: #99acad;
+  --background-reverse: #121212;
+  --color-reverse: #f5f7fa;
 }
 
 .moon {
   --background-primary: #121212;
   --color-primary: #f5f7fa;
+  --color-secondary: rgb(184, 184, 184);
   --color-dash: #E2FDFF;
+  --background-reverse: #E2FDFF;
+  --color-reverse: black;
 }
 
 html {
@@ -25,6 +34,34 @@ h1,
 h2,
 p {
   color: var(--color-primary);
+}
+
+textarea{
+  width: 100%;
+  height: 1.3em;
+  color: var(--color-primary);
+  background-color:var(--background-primary);
+  font-size: 1.25em;
+  border-color: var(--color-dash);
+  border-width: 0 0 2px;
+  resize:both;
+  outline: 0;
+  overflow: hidden;
+}
+
+textarea:focus{
+  border-color:var(--color-primary);
+}
+
+textarea::placeholder{
+  color: var(--color-dash);
+}
+
+input[type=submit]{
+  background-color: var(--background-reverse);
+  color: var(--color-reverse);
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 @media (hover: none) {
@@ -87,6 +124,12 @@ a:hover,
   align-items: flex-start;
 }
 
+#form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 #nav_bar {
   /* border: 1px solid #9BB1FF; */
   text-align: right;
@@ -143,4 +186,15 @@ a:hover,
 
 .links {
   letter-spacing: 0.5em;
+}
+
+.disclaimer{
+  font-size: x-small;
+}
+
+.count{
+  font-size: x-small;
+  text-align: right;
+  align-self: flex-start;
+  margin-top: -5px;
 }

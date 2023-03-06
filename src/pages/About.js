@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-
 function About() {
   useEffect(() => {
     document.title = "quinn's life (〃 ω 〃)";
@@ -8,23 +7,22 @@ function About() {
 
   return (
     <div>
-
       <img src="/me.jpg" alt="it's me!" width="200" height="auto" />
       <p>─=≡Σ((( つ•̀ω•́)つLET’S GO!</p>
 
       <hr class="dashed" />
 
       <p>
-        hey hey hey! i'm someone who's a bit all over the place. i love
-        all things tech, art, fashion, walkable cities, food, and so much
-        more. sometimes i feel like a sponge, going around and learning as
-        much as i can from the amazing people around me &#129533;.
+        hey hey hey! i'm someone who's a bit all over the place. i love all
+        things tech, art, fashion, walkable cities, food, and so much more.
+        sometimes i feel like a sponge, going around and learning as much as i
+        can from the amazing people around me &#129533;.
         <br />
         <br />
-        i'm a serial hobby hopper, i dabble in the arts, i stay fit, and
-        i'm currently on the quest for a perfect cup of coffee. my
-        existence in so many things really helped shape the learner that i
-        am today, and the one i'll be tomorrow!
+        i'm a serial hobby hopper, i dabble in the arts, i stay fit, and i'm
+        currently on the quest for a perfect cup of coffee. my existence in so
+        many things really helped shape the learner that i am today, and the one
+        i'll be tomorrow!
       </p>
 
       <p> </p>
@@ -34,11 +32,7 @@ function About() {
       </p>
       <p>
         i'm a 3rd year student at{" "}
-        <a
-          href="https://www.mcmaster.ca/"
-          target="_blank"
-          class="clickable"
-        >
+        <a href="https://www.mcmaster.ca/" target="_blank" class="clickable">
           McMaster University
         </a>
         , leading undergrad computing and engineering labs.
@@ -47,9 +41,9 @@ function About() {
         i'm interested in accessibility, security, and all creative
         intersections of tech and art &#127912;.
         <br />
-        <br />
-        no plans this summer yet, still looking for an internship that
-        will help me grow and have an impact on something i care about!
+        {/* <br /> */}
+        {/* no plans this summer yet, still looking for an internship that
+        will help me grow and have an impact on something i care about! */}
       </p>
 
       <p> </p>
@@ -107,8 +101,8 @@ function About() {
           </a>
         </li>
         <li>
-          led the marketing team for the biggest design competition in
-          2021 with the{" "}
+          led the marketing team for the biggest design competition in 2021 with
+          the{" "}
           <a
             href="https://www.mcmasterdesignleague.com/"
             class="clickable"
@@ -119,11 +113,7 @@ function About() {
         </li>
         <li>
           curated the attendee experience for{" "}
-          <a
-            href="https://deltahacks.com/"
-            target="_blank"
-            class="clickable"
-          >
+          <a href="https://deltahacks.com/" target="_blank" class="clickable">
             Deltahacks
           </a>
         </li>
