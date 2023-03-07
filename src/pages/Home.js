@@ -30,7 +30,7 @@ const space = [
   "shard",
   "bit",
   "piece",
-  "string"
+  "string",
 ];
 
 function useWordCycle(words) {
@@ -67,14 +67,19 @@ function Home() {
       </p>
       <p>
         i'm a student based in Toronto &#127809; where i study software
-        engineering. when i'm not coding, i'm learning about
-        accessibility, reading manga, and{" "}
+        engineering. when i'm not coding, i'm learning about accessibility,
+        reading manga, and{" "}
         <a class="clickable" id="hobbies" onClick={handleHobbyClick}>
           {currentHobby}
         </a>
         .
       </p>
-      <p>reach out to me anytime at quinnha.hello@gmail.com</p>
+      <p>
+        reach out to me anytime at{" "}
+        <a href="mailto:quinnha.hello@gmail.com" class="clickable">
+          quinnha.hello@gmail.com
+        </a>
+      </p>
     </div>
   );
 }
