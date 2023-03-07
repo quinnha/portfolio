@@ -43,6 +43,7 @@ export default function QuinnAI() {
 
   async function onSubmit(event) {
     setCopyInput(input);
+    console.log(input);
     event.preventDefault();
     try {
       const lastClick = localStorage.getItem("lastClick");
@@ -77,6 +78,7 @@ export default function QuinnAI() {
           new Error(`Request failed with status ${response.status}`)
         );
       }
+      console.log(data);
       setResult(
         data.concat(endings[Math.floor(Math.random() * endings.length)])
       );
@@ -87,6 +89,12 @@ export default function QuinnAI() {
       alert(error.message);
     }
   }
+
+  const onEnterPress = (e) => {
+    if (e.keyCode == 13 && e.shiftKey == false) {
+      onSubmit(e);
+    }
+  };
 
   return (
     <div>
@@ -99,6 +107,7 @@ export default function QuinnAI() {
           value={input}
           onChange={(e) => textInput(e)}
           maxLength="100"
+          onKeyDown={(e) => onEnterPress(e)}
         />
         <div class="flex-box" id="form">
           <input
