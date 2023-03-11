@@ -9,8 +9,7 @@ inspired by [tiffany](https://tiffanywang.me/)
 - [x] dark mode
 - [x] animate theme toggle button
 - [x] quinn ai chatbot w/ Chat GPT API
-- [ ] animate theme toggle on page
+- [x] blog page, start writing
 - [ ] add images to projects
-- [ ] add blog/writing section
 - [ ] add misc/accomplishments section
 - [ ] mobile navbar
