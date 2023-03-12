@@ -26,6 +26,15 @@ function Projects() {
         talk to an ai version of me (try it out)!
       </p>
       <p>
+        <NavLink to="/" class="clickable">
+          <u>
+            <b>personal website</b>
+          </u>
+        </NavLink>{" "}
+        <br />
+        what you're looking at right now :)
+      </p>
+      <p>
         <a
           href="https://ridehome.netlify.app/"
           class="clickable"
