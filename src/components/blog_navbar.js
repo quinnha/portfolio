@@ -20,8 +20,8 @@ function BlogNavBar() {
         <nobr>
           <NavLink to="/">home</NavLink> | <NavLink to="/about">about</NavLink>{" "}
           | <NavLink to="/projects">projects</NavLink> |{" "}
-          <NavLink to="/resume">resume</NavLink> |{" "}
           <NavLink to="/log">logbook</NavLink> |{" "}
+          <NavLink to="/resume">resume</NavLink> |{" "}
           <CSSTransition
             in={visible}
             appear={true}
