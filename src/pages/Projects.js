@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function Projects() {
   useEffect(() => {
@@ -15,6 +16,15 @@ function Projects() {
         <nobr>(๑•̀ㅁ•́๑)✧</nobr>
       </p>
       <hr class="dashed" />
+      <p>
+        <NavLink to="/quinn-ai" class="clickable">
+          <u>
+            <b>quinn ai</b>
+          </u>
+        </NavLink>{" "}
+        <br />
+        talk to an ai version of me (try it out)!
+      </p>
       <p>
         <a
           href="https://ridehome.netlify.app/"
