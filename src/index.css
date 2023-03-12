@@ -122,7 +122,34 @@ a:hover,
   flex-direction: row;
   flex-basis: calc(100%/3);
   align-items: flex-start;
+  flex-shrink: 10;
 }
+
+#blog_header_card {
+  /* border:1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#blog_header{
+  margin-right: 250px;
+  display: flex;
+  flex-grow: 9;
+}
+
+/* make blog formatting */
+#blog{
+  /* border: 1px solid blue; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 8;
+  max-width: 50%;
+  flex-direction: column;
+} 
+
 
 #form {
   display: flex;

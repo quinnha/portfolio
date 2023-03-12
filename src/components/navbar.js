@@ -21,7 +21,7 @@ function NavBar() {
         <NavLink to="/about">about</NavLink> <br />
         <NavLink to="/projects">projects</NavLink> <br />
         <NavLink to="/resume">resume</NavLink> <br />
-        <NavLink to="/quinn-ai">quinn ai</NavLink> <br />
+        <NavLink to="/log">logbook</NavLink> <br />
         <CSSTransition
           in={visible}
           appear={true}

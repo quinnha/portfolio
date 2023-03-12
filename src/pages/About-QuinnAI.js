@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import BlogNavBar from "../components/blog_navbar";
 
 function AboutQuinnAI() {
   useEffect(() => {
@@ -8,7 +9,10 @@ function AboutQuinnAI() {
 
   return (
     <div>
-      <h1>about quinn ai</h1>
+      <div class="flex-container" id="blog_header_card">
+        <h1 id="blog_header">about quinn ai</h1>
+        <BlogNavBar></BlogNavBar>
+      </div>
       <p>
         thanks for checking out quinn ai! here's some more info about it
         <nobr>(๑˃̵　ᴗ　˂̵)و</nobr>
@@ -126,12 +130,6 @@ function AboutQuinnAI() {
           quinnha.hello@gmail.com
         </a>{" "}
         with any feedback/suggestions :)
-      </p>
-      <p>
-        <NavLink to="/quinn-ai">
-          <u>back</u>
-        </NavLink>{" "}
-        <br />
       </p>
     </div>
   );

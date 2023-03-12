@@ -6,8 +6,10 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import QuinnAI from "./pages/QuinnAI";
 import AboutQuinnAI from "./pages/About-QuinnAI";
+import Log from "./pages/Log";
 import "./index.css";
 import NavBar from "./components/navbar";
+import BlogNavBar from "./components/blog_navbar";
 import Footer from "./components/footer";
 import TagManager from "react-gtm-module";
 
@@ -15,6 +17,61 @@ const tagManagerArgs = {
   gtmId: "G-BR72D9JR60",
 };
 TagManager.initialize(tagManagerArgs);
+
+function AppRoutes() {
+  return (
+    <>
+      <div class="flex-container" id="outer" />
+      <div class="flex-container" id="outer">
+        <div class="flex-container" id="inner"></div>
+
+        <div class="flex-container" id="inner">
+          <div class="flex-container" id="nav_bar">
+            <br />
+            <NavBar></NavBar>
+          </div>
+
+          <div class="flex-container" id="content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="resume" element={<Resume />} />
+              <Route path="quinn-ai" element={<QuinnAI />} />
+            </Routes>
+
+            <Footer />
+          </div>
+        </div>
+
+        <div class="flex-container" id="inner" />
+      </div>
+      <div class="flex-container" id="outer" />
+    </>
+  );
+}
+
+function BlogRoutes() {
+  return (
+    <div>
+      <div class="flex-container" id="outer" />
+      <div class="flex-container" id="outer">
+        <div class="flex-container" id="inner"></div>
+
+        <div class="flex-container" id="blog">
+          <Routes>
+            <Route path="/" element={<Log />} />
+            <Route path="quinn-ai" element={<AboutQuinnAI />} />
+          </Routes>
+          <Footer />
+        </div>
+
+        <div class="flex-container" id="inner" />
+      </div>
+      <div class="flex-container" id="outer" />
+    </div>
+  );
+}
 
 function App() {
   window.dataLayer.push({
@@ -36,34 +93,10 @@ function App() {
         name="viewport"
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
       />
-
-      <div class="flex-container" id="outer" />
-      <div class="flex-container" id="outer">
-        <div class="flex-container" id="inner"></div>
-
-        <div class="flex-container" id="inner">
-          <div class="flex-container" id="nav_bar">
-            <br />
-            <NavBar></NavBar>
-          </div>
-
-          <div class="flex-container" id="content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="resume" element={<Resume />} />
-              <Route path="quinn-ai" element={<QuinnAI />} />
-              <Route path="quinn-ai/about" element={<AboutQuinnAI />} />
-            </Routes>
-
-            <Footer />
-          </div>
-        </div>
-
-        <div class="flex-container" id="inner" />
-      </div>
-      <div class="flex-container" id="outer" />
+      <Routes>
+        <Route path="/*" element={<AppRoutes />} />
+        <Route path="/log/*" element={<BlogRoutes />} />
+      </Routes>
     </div>
   );
 }
