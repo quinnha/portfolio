@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import QuinnAI from "./pages/QuinnAI";
+import AboutQuinnAI from "./pages/About-QuinnAI";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
@@ -53,6 +54,7 @@ function App() {
               <Route path="projects" element={<Projects />} />
               <Route path="resume" element={<Resume />} />
               <Route path="quinn-ai" element={<QuinnAI />} />
+              <Route path="quinn-ai/about" element={<AboutQuinnAI />} />
             </Routes>
 
             <Footer />
