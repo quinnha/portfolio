@@ -126,7 +126,7 @@ export default function QuinnAI() {
           accurate. for best responses, use proper grammar (capitalization and
           punctuation), and end prompts with a "?"
           <br />
-          <NavLink to="/quinn-ai/about" class="clickable">
+          <NavLink to="/log/quinn-ai" class="clickable">
             <u>read more about quinn ai</u>
           </NavLink>{" "}
           <br />
