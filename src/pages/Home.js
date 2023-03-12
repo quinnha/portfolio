@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const hobbies = [
   "playing my ukulele",
@@ -79,6 +80,13 @@ function Home() {
         <a href="mailto:quinnha.hello@gmail.com" class="clickable">
           quinnha.hello@gmail.com
         </a>
+        ,
+        <br />
+        or ask{" "}
+        <NavLink to="/quinn-ai" class="clickable">
+          <u>my ai</u>
+        </NavLink>{" "}
+        a question!
       </p>
     </div>
   );
