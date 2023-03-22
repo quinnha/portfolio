@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 function Resume() {
   useEffect(() => {
     document.title = "quinn's resume (๑•̀ㅁ•́๑)✧";
@@ -8,12 +7,11 @@ function Resume() {
 
   return (
     <div>
-
       <p>here's my resume（˶′◡‵˶）</p>
       <hr class="dashed" />
 
       <iframe
-        src="https://drive.google.com/file/d/1q7S8FY6DE67h7Ke63bUy8yOEQ2-4ZDqO/preview"
+        src="https://drive.google.com/file/d/1yc55Az_3824yYQpjTEtzzf2fPfIyIgms/preview"
         width="640"
         height="825"
         allow="autoplay"
