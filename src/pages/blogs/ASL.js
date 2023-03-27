@@ -13,10 +13,7 @@ function ASL() {
         <h2 id="blog_header">asl: how history shapes languages</h2>
         <BlogNavBar></BlogNavBar>
       </div>
-      <p>
-        some learnings about asl and how it affects the present
-        <nobr>(๑˃̵　ᴗ　˂̵)و</nobr>
-      </p>
+      <p>some learnings about asl and how it affects the present</p>
       <hr class="dashed" />
       <p>
         <i>coming soon!</i>
