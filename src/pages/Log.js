@@ -14,11 +14,16 @@ function Log() {
         <BlogNavBar></BlogNavBar>
       </div>
 
-      <p>collections of events and adventures</p>
+      <p>
+        collections of events and adventures, find all blogs{" "}
+        <NavLink to="/blogs" class="clickable">
+          <u>here</u>
+        </NavLink>{" "}
+      </p>
       <hr class="dashed"></hr>
       <p>
         <b>Mar 2023</b>
-        <br />-{" "}
+        <br />- signed an offer with google for the summer! <br /> -{" "}
         <NavLink to="/log/quinn-ai" class="clickable">
           <u>[blog]</u>
         </NavLink>{" "}

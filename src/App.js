@@ -5,11 +5,12 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import QuinnAI from "./pages/QuinnAI";
-import AboutQuinnAI from "./pages/About-QuinnAI";
+import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
+import ASL from "./pages/blogs/ASL";
 import Log from "./pages/Log";
+import Blog from "./pages/blogs/Blogs";
 import "./index.css";
 import NavBar from "./components/navbar";
-import BlogNavBar from "./components/blog_navbar";
 import Footer from "./components/footer";
 import TagManager from "react-gtm-module";
 
@@ -51,7 +52,7 @@ function AppRoutes() {
   );
 }
 
-function BlogRoutes() {
+function LogRoutes() {
   return (
     <div>
       <div class="flex-container" id="outer" />
@@ -62,6 +63,29 @@ function BlogRoutes() {
           <Routes>
             <Route path="/" element={<Log />} />
             <Route path="quinn-ai" element={<AboutQuinnAI />} />
+          </Routes>
+          <Footer />
+        </div>
+
+        <div class="flex-container" id="inner" />
+      </div>
+      <div class="flex-container" id="outer" />
+    </div>
+  );
+}
+
+function BlogRoutes() {
+  return (
+    <div>
+      <div class="flex-container" id="outer" />
+      <div class="flex-container" id="outer">
+        <div class="flex-container" id="inner"></div>
+
+        <div class="flex-container" id="blog">
+          <Routes>
+            <Route path="/" element={<Blog />} />
+            <Route path="quinn-ai" element={<AboutQuinnAI />} />
+            <Route path="asl" element={<ASL />} />
           </Routes>
           <Footer />
         </div>
@@ -95,7 +119,8 @@ function App() {
       />
       <Routes>
         <Route path="/*" element={<AppRoutes />} />
-        <Route path="/log/*" element={<BlogRoutes />} />
+        <Route path="/log/*" element={<LogRoutes />} />
+        <Route path="/blogs/*" element={<BlogRoutes />} />
       </Routes>
     </div>
   );
