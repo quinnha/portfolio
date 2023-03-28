@@ -24,7 +24,7 @@ function Log() {
       <p>
         <b>Mar 2023</b>
         <br />- signed an offer with google for the summer! <br /> -{" "}
-        <NavLink to="/log/quinn-ai" class="clickable">
+        <NavLink to="/blogs/quinn-ai" class="clickable">
           <u>[blog]</u>
         </NavLink>{" "}
         added{" "}

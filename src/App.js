@@ -62,7 +62,6 @@ function LogRoutes() {
         <div class="flex-container" id="blog">
           <Routes>
             <Route path="/" element={<Log />} />
-            <Route path="quinn-ai" element={<AboutQuinnAI />} />
           </Routes>
           <Footer />
         </div>
