@@ -38,6 +38,13 @@ function Footer() {
         >
           {" "}
         </a>
+        <a
+          href="https://bento.me/quinnha"
+          target="_blank"
+          class="	fa fa-caret-square-o-down fa-lg"
+        >
+          {""}
+        </a>
       </p>
       {/* <p class="credit_p">
         inspired by{" "}
