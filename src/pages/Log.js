@@ -22,8 +22,17 @@ function Log() {
       </p>
       <hr class="dashed"></hr>
       <p>
+        <b>July 2023</b>
+        <br />- broke staging lol
+      </p>
+      <p>
+        <b>June 2023</b>
+        <br />- survived new york smog
+      </p>
+      <p>
         <b>May 2023</b>
-        <br />- moved to nyc and started working on docs/sheets/slides!
+        <br />- started working at google on their editors accessibility team!
+        <br />- moved to nyc for the summer
       </p>
       <p>
         <b>Mar 2023</b>
