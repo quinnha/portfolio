@@ -44,7 +44,7 @@ function About() {
         intersections of tech and art &#127912;.
         <br />
         <br />
-        this summer i'll be working at{" "}
+        this summer i'm at{" "}
         <a href="https://about.google/" target="_blank" class="clickable">
           Google
         </a>{" "}
