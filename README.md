@@ -10,6 +10,7 @@ inspired by [tiffany](https://tiffanywang.me/)
 - [x] animate theme toggle button
 - [x] quinn ai chatbot w/ Chat GPT API
 - [x] blog page, start writing
+- [ ] write about nyc & working at google
 - [ ] add images to projects
 - [ ] add misc/accomplishments section
 - [ ] mobile navbar

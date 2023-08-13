@@ -78,7 +78,7 @@ function Log() {
         <b>Jul 2022</b>
         <br />- biked my first century mile with the same{" "}
         <ImageHoverCard text="friends" imageSrc={"/images/bikers.png"} />{" "}
-        (toronto -> niagara falls)
+        (toronto -&gt; niagara falls)
       </p>
       <p />
       <p>
