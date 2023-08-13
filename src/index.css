@@ -228,3 +228,7 @@ a:hover,
   align-self: flex-start;
   margin-top: -5px;
 }
+
+.box{
+  outline: 2px solid var(--color-primary);
+}
