@@ -33,7 +33,7 @@ function About() {
         <b>currently</b>
       </p>
       <p>
-        i'm a 4rd year student at{" "}
+        i'm a senior at{" "}
         <a href="https://www.mcmaster.ca/" target="_blank" class="clickable">
           McMaster University
         </a>
