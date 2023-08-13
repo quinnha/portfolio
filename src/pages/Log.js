@@ -32,6 +32,11 @@ function Log() {
         >
           twitter
         </a>
+        <br />-{" "}
+        <NavLink to="/blogs/nyc" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        moved out of my nyc apartment
       </p>
       <p>
         <b>July 2023</b>
