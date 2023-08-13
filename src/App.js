@@ -6,7 +6,6 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import QuinnAI from "./pages/QuinnAI";
 import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
-import ASL from "./pages/blogs/ASL";
 import Log from "./pages/Log";
 import Blog from "./pages/blogs/Blogs";
 import "./index.css";
@@ -84,7 +83,6 @@ function BlogRoutes() {
           <Routes>
             <Route path="/" element={<Blog />} />
             <Route path="quinn-ai" element={<AboutQuinnAI />} />
-            <Route path="asl" element={<ASL />} />
           </Routes>
           <Footer />
         </div>
