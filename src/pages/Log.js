@@ -23,17 +23,37 @@ function Log() {
       </p>
       <hr class="dashed"></hr>
       <p>
+        <b>Aug 2023</b>
+        <br />- went viral on{" "}
+        <a
+          href="https://twitter.com/qvinnh/status/1688944756422836224?s=20"
+          class="clickable"
+          target="_blank"
+        >
+          twitter
+        </a>
+      </p>
+      <p>
         <b>July 2023</b>
         <br />- broke staging lol
-        <br />- saw a baseball game for the first time!
+        <br />- saw a baseball game in ny :)
+        <br />- visited <ImageHoverCard
+          text="sf"
+          imageSrc={"/images/sf.png"}
+        />{" "}
+        and the <ImageHoverCard text="bay area" imageSrc={"/images/bay.png"} />{" "}
+        for the first time!
       </p>
       <p>
         <b>June 2023</b>
-        <br />- survived new york smog
+        <br />- survived new york{" "}
+        <ImageHoverCard text="smog" imageSrc={"/images/smog.png"} />{" "}
+        <nobr>(ºΔº)</nobr>
       </p>
       <p>
         <b>May 2023</b>
-        <br />- started working at google on their editors accessibility team!
+        <br />- started working at google on their editors accessibility team
+        <nobr>ヽ(・∀・)ﾉ</nobr>
         <br />- moved to nyc for the summer
       </p>
       <p>
@@ -57,44 +77,20 @@ function Log() {
       <p>
         <b>Jul 2022</b>
         <br />- biked my first century mile with the same{" "}
-        <a
-          href="https://drive.google.com/file/d/1dPwGpZJknoUPU1Zs1dpznACSvXc1Gi3X/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          {" "}
-          friends
-        </a>{" "}
+        <ImageHoverCard text="friends" imageSrc={"/images/bikers.png"} />{" "}
         (toronto -> niagara falls)
       </p>
       <p />
       <p>
         <b>June 2022</b>
         <br />- biked 75km for brain health with my{" "}
-        <a
-          href="https://drive.google.com/file/d/1rkkK23D3LUkAjelRNXAt44An62fTy8Yo/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          {" "}
-          friends
-        </a>{" "}
-        <a
-          href="https://drive.google.com/file/d/1G2brPXKw2-oQ23RAYhRiQN0tVGwJKypH/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          (i ate a banana on a highway) <br />
-        </a>{" "}
-        - went to{" "}
-        <a
-          href="https://drive.google.com/file/d/1hVKzTT2HGtg2N3miy8BPZ9QZRvV3iY3N/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          vancouver
-        </a>
-        !
+        <ImageHoverCard text="friends" imageSrc={"/images/friends.png"} />{" "}
+        <ImageHoverCard
+          text="(i at a banana on the highway)"
+          imageSrc={"/images/banana.png"}
+        />{" "}
+        <br />- went to{" "}
+        <ImageHoverCard text="vancouver" imageSrc={"/images/vancouver.png"} />!
       </p>
       <p />
       <p>
@@ -105,13 +101,10 @@ function Log() {
         <p />
         <b> Feb 2022</b>
         <br />- snowboarded the{" "}
-        <a
-          href="https://drive.google.com/file/d/1M3RcbdvrYDcF3NRVY9fixUQB-8SQcdWJ/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          west coast
-        </a>{" "}
+        <ImageHoverCard
+          text="west coast"
+          imageSrc={"/images/snowboarding.png"}
+        />{" "}
         for the first time
       </p>
       <p>
