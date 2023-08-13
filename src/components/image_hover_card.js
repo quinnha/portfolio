@@ -16,6 +16,7 @@ function ImageHoverCard({ text, imageSrc }) {
     <span className="image-hover-card">
       <span
         className="text"
+        className="clickable"
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
       >
