@@ -18,6 +18,8 @@ const hobbies = [
   "watching super smash bros melee",
   "trying to get on top of another mountain",
   "crafting a new spotify playlist",
+  "missing dynos at my local climbing gym",
+  "still breaking code lol",
 ];
 
 const space = [
@@ -68,7 +70,7 @@ function Home() {
       </p>
       <p>
         i'm a student based in Toronto &#127809; where i study software
-        engineering. when i'm not breaking prod at google, i'm learning about
+        engineering. when i'm not breaking code, i'm learning about
         accessibility, reading manga, and{" "}
         <a class="clickable" id="hobbies" onClick={handleHobbyClick}>
           {currentHobby}
@@ -88,6 +90,13 @@ function Home() {
         </NavLink>{" "}
         a question!
       </p>
+      <div class="box">
+        i'm looking for 2024 new grad swe positions in nyc! shoot me an{" "}
+        <a href="mailto:quinnha.hello@gmail.com" class="clickable">
+          email
+        </a>{" "}
+        if you (or your friends) are hiring &lt;3{" "}
+      </div>
     </div>
   );
 }
