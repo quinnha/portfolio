@@ -5,6 +5,7 @@
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
+  --box-shadow: rgba(0, 0, 0, 0.3)
 }
 
 .sun {
@@ -14,6 +15,7 @@
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
+  --box-shadow: rgba(0,0,0,0.3)
 }
 
 .moon {
@@ -23,6 +25,7 @@
   --color-dash: #E2FDFF;
   --background-reverse: #E2FDFF;
   --color-reverse: black;
+  --box-shadow: rgba(255, 255, 255, 0.3)
 }
 
 html {

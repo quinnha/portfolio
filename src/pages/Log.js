@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BlogNavBar from "../components/blog_navbar";
+import ImageHoverCard from "../components/image_hover_card";
 
 function Log() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function Log() {
       <p>
         <b>July 2023</b>
         <br />- broke staging lol
+        <br />- saw a baseball game for the first time!
       </p>
       <p>
         <b>June 2023</b>
@@ -116,13 +118,10 @@ function Log() {
         <p />
         <b> Aug 2021</b>
         <br />- hiked{" "}
-        <a
-          href="https://drive.google.com/file/d/10h2fZjXDGq4VY4UQ7ppgTgjP2peW4x-_/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          lake garibaldi
-        </a>{" "}
+        <ImageHoverCard
+          text="lake garibaldi"
+          imageSrc={"/images/garibaldi.png"}
+        />
         (first big hike)
       </p>
       <p />
