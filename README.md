@@ -11,6 +11,7 @@ inspired by [tiffany](https://tiffanywang.me/)
 - [x] quinn ai chatbot w/ Chat GPT API
 - [x] blog page, start writing
 - [ ] write about nyc & working at google
+- [ ] map out favourite nyc places
 - [ ] add images to projects
 - [ ] add misc/accomplishments section
 - [ ] mobile navbar
