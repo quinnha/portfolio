@@ -5,7 +5,7 @@ import ImageHoverCard from "../../components/image_hover_card";
 
 function NYC() {
   useEffect(() => {
-    document.title = "about quinn ai (´∀｀)";
+    document.title = "a nyc summer (─‿‿─)";
   }, []);
 
   return (
