@@ -22,6 +22,11 @@ function Blog() {
           <u>quinn ai</u>
         </NavLink>{" "}
       </h3>
+      <h3>
+        <NavLink to="/blogs/nyc" class="clickable">
+          <u>a nyc summer</u>
+        </NavLink>{" "}
+      </h3>
     </div>
   );
 }
