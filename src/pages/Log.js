@@ -146,4 +146,6 @@ function Log() {
   );
 }
 
+Log.metaDescription = "quinn's log";
+
 export default Log;
