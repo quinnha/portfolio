@@ -11,7 +11,7 @@
 .sun {
   --background-primary: #E2FDFF;
   --color-primary: black;
-  --color-secondary: rgb(55, 55, 55);
+  --color-secondary: rgb(66, 66, 66);
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
@@ -37,6 +37,10 @@ h1,
 h2,
 p {
   color: var(--color-primary);
+}
+
+h4 {
+  color: var(--color-secondary);
 }
 
 textarea{

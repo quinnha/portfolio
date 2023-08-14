@@ -27,6 +27,11 @@ function Blog() {
           <u>a nyc summer</u>
         </NavLink>{" "}
       </h3>
+      <h3>
+        <NavLink to="/blogs/google" class="clickable">
+          <u>a summer with google</u>
+        </NavLink>{" "}
+      </h3>
     </div>
   );
 }
