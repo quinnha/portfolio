@@ -17,36 +17,23 @@ function Google() {
       <p>reflecting on my summer internship at google!</p>
       <hr class="dashed" />
       <p>
-        hi everyone! if you don’t know yet, i’m{" "}
+        howdy &#x1f920;. if you don’t know yet, i’m{" "}
         <ImageHoverCard text="quinn" imageSrc={"/images/google/me.png"} />, and
         i just finished an internship with{" "}
         <ImageHoverCard text="google" imageSrc={"/images/google/google.png"} />,
-        in their nyc office. i wanted to take some time to reflect on the
-        experience as a whole, not only working at faang, but a bit about my
-        personal takeaways.
-        <br />
-        <br />
-        tldr: super awesome summer, i learned a lot, and will be taking these
-        lessons to wherever hires me for a 2024 new grad swe position (in ny)!
-      </p>
-      <h3>before</h3>
-      <p>
-        oh my god. i popped off so hard when i got the offer, but then when they
-        started sending me some onboarding docs, i realized there was so many
-        things i had to do. being a canadian, i had so much paperwork to do, so
-        much planning to get setup, and a lot of things i couldnt do until i got
-        to the land of the free. thankfully they provided a lot of support, and
-        i was able to make it over!
-      </p>
-      <h3>during</h3>
-      <p>
-        when i landed i was sleep-deprived, overcaffeinated, overstimulated, and
-        overwhelmed. new york is definitely a big city, read more{" "}
+        in their nyc office! i wanted to take some time to reflect on the
+        experience as a whole! if you want to read about my time in nyc, you can
+        find it{" "}
         <NavLink to="/blogs/nyc" class="clickable">
           <u>here</u>
         </NavLink>
         .
+        <br />
+        <br />
+        tldr: super awesome summer, i learned a lot, and will be taking these
+        lessons to wherever i end up next!
       </p>
+      <h3>the internship</h3>
       <h4>what i actually worked on</h4>
       <p>
         i worked on google workspace, specifically on accessibility tools for
@@ -241,7 +228,7 @@ function Google() {
         place really molded my brain to not think about the now, but the{" "}
         <ImageHoverCard text="future" imageSrc={"/images/google/future.png"} />.
       </p>
-      <h3>after</h3>
+      <h3>final thoughts</h3>
       <p>
         if i had to rate my summer with google out of 10, i’d give it 9/10. i
         got a lot out of this internship, specifically a lot of great
