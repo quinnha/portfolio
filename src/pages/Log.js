@@ -24,6 +24,16 @@ function Log() {
       <hr class="dashed"></hr>
       <p>
         <b>Aug 2023</b>
+        <br />-{" "}
+        <NavLink to="/blogs/nyc" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        a nyc summer
+        <br />-{" "}
+        <NavLink to="/blogs/google" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        a summer with google
         <br />- went viral on{" "}
         <a
           href="https://twitter.com/qvinnh/status/1688944756422836224?s=20"
@@ -32,11 +42,6 @@ function Log() {
         >
           twitter
         </a>
-        <br />-{" "}
-        <NavLink to="/blogs/nyc" class="clickable">
-          <u>[blog]</u>
-        </NavLink>{" "}
-        moved out of my nyc apartment
       </p>
       <p>
         <b>July 2023</b>
