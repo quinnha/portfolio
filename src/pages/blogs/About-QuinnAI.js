@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import BlogNavBar from "../../components/blog_navbar";
+import { Helmet } from "react-helmet";
 
 function AboutQuinnAI() {
   useEffect(() => {
@@ -9,6 +10,9 @@ function AboutQuinnAI() {
 
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="about quinn ai" />
+      </Helmet>
       <div class="flex-container" id="blog_header_card">
         <h1 id="blog_header">about quinn ai</h1>
         <BlogNavBar></BlogNavBar>
