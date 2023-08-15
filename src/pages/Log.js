@@ -2,14 +2,19 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BlogNavBar from "../components/blog_navbar";
 import ImageHoverCard from "../components/image_hover_card";
+import { Helmet } from "react-helmet";
 
 function Log() {
   useEffect(() => {
     document.title = "quinn's log (/ω＼)";
+    document.metaDescription = "test";
   }, []);
 
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="quinn's logbook" />
+      </Helmet>
       <div class="flex-container" id="blog_header_card">
         <h1 id="blog_header">logbook</h1>
         <BlogNavBar></BlogNavBar>
@@ -150,7 +155,5 @@ function Log() {
     </div>
   );
 }
-
-Log.metaDescription = "quinn's log";
 
 export default Log;
