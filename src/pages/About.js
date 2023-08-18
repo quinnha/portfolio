@@ -45,7 +45,7 @@ function About() {
         <br />
         <br />
         <div class="box">
-          i'm looking for new grad jobs based out of nyc! shoot me an email at{" "}
+          i'm looking for 2024 swe new grad jobs based! shoot me an email at{" "}
           <a href="mailto:quinnha.hello@gmail.com" class="clickable">
             quinnha.hello@gmail.com
           </a>
