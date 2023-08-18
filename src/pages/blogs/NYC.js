@@ -28,7 +28,11 @@ function NYC() {
         i was in nyc for a quick 14-week internship with{" "}
         <ImageHoverCard text="google" imageSrc={"/images/nyc/google.png"} />,
         where i worked on accessibility tools for google docs/sheets/slides! it
-        was a super amazing experience, i’ll write about it soon :)
+        was a super amazing experience, read more{" "}
+        <NavLink to="/blogs/google" class="clickable">
+          <u>here</u>
+        </NavLink>
+        .
       </p>
       <br />
       <h3>overall thoughts</h3>

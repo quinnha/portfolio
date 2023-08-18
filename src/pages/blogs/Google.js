@@ -240,7 +240,7 @@ function Google() {
         (shoutout to my team!). but there’s still a couple of things i wished i
         could have done that might have only been possible at a startup. i’ll be
         taking these lessons to wherever i end up next, and if you’re looking
-        for a 2024 new grad based out of new york, shoot me an email at{" "}
+        for a 2024 new grad, shoot me an email at{" "}
         <a href="mailto:quinnha.hello@gmail.com" class="clickable">
           quinnha.hello@gmail.com
         </a>

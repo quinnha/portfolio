@@ -91,7 +91,7 @@ function Home() {
         a question!
       </p>
       <div class="box">
-        i'm looking for 2024 new grad swe positions in nyc! shoot me an{" "}
+        i'm looking for 2024 new grad swe positions! shoot me an{" "}
         <a href="mailto:quinnha.hello@gmail.com" class="clickable">
           email
         </a>{" "}
