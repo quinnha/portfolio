@@ -10,6 +10,7 @@ import NYC from "./pages/blogs/NYC";
 import Google from "./pages/blogs/Google";
 import Log from "./pages/Log";
 import Blog from "./pages/blogs/Blogs";
+import Tests from "./pages/Tests";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
@@ -40,6 +41,7 @@ function AppRoutes() {
               <Route path="projects" element={<Projects />} />
               <Route path="resume" element={<Resume />} />
               <Route path="quinn-ai" element={<QuinnAI />} />
+              <Route path="personality-tests" element={<Tests />} />
             </Routes>
 
             <Footer />

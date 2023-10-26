@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function About() {
   useEffect(() => {
@@ -11,9 +12,7 @@ function About() {
       <p>
         <nobr>─=≡Σ((( つ•̀ω•́)つLET’S GO!</nobr>
       </p>
-
       <hr class="dashed" />
-
       <p>
         hey hey hey! i'm someone who's a bit all over the place. i love all
         things tech, art, fashion, walkable cities, food, and so much more.
@@ -26,9 +25,7 @@ function About() {
         many things really helped shape the learner that i am today, and the one
         i'll be tomorrow!
       </p>
-
       <p> </p>
-
       <p>
         <b>currently</b>
       </p>
@@ -52,9 +49,7 @@ function About() {
           , and let's talk about why i'd be a good fit for your team!
         </div>
       </p>
-
       <p> </p>
-
       <p>
         <b>previously</b>
       </p>
@@ -136,6 +131,11 @@ function About() {
           </a>
         </li>
       </ul>
+      still don't know who i am? see what a couple of{" "}
+      <NavLink to="/personality-tests" class="clickable">
+        <u>personality tests</u>
+      </NavLink>{" "}
+      have to say about me!
     </div>
   );
 }
