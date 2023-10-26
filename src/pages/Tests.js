@@ -37,6 +37,12 @@ function Tests() {
         height="auto"
       />
       <img
+        src="/images/tests/bulbasaur.jpg"
+        alt="bulbasaur"
+        width="450"
+        height="auto"
+      />
+      <img
         src="/images/tests/raymond.png"
         alt="raymond"
         width="450"
