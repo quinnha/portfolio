@@ -48,6 +48,7 @@ function Tests() {
         width="450"
         height="auto"
       />
+      <img src="/images/tests/poet.png" alt="poet" width="200" height="auto" />
     </div>
   );
 }
