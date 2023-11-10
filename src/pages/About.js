@@ -34,20 +34,13 @@ function About() {
         <a href="https://www.mcmaster.ca/" target="_blank" class="clickable">
           McMaster University
         </a>
-        , leading undergrad computing and engineering labs.
+        , working on an autonomous satellite tracker and scheduler.
         <br />
         <br />
-        i'm interested in accessibility, security, and all creative
-        intersections of tech and art &#127912;.
+        i'm interested in accessibility, and all creative intersections of tech
+        and art &#127912;.
         <br />
         <br />
-        <div class="box">
-          i'm looking for 2024 swe new grad jobs based! shoot me an email at{" "}
-          <a href="mailto:quinnha.hello@gmail.com" class="clickable">
-            quinnha.hello@gmail.com
-          </a>
-          , and let's talk about why i'd be a good fit for your team!
-        </div>
       </p>
       <p> </p>
       <p>
