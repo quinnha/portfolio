@@ -12,6 +12,20 @@ function Tests() {
         <nobr>૮ ˶ᵔ ᵕ ᵔ˶ ა</nobr> a various assortment of personality tests
       </p>
       <hr class="dashed" />
+      <br />
+      <a href="https://www.dimensional.me/quinnha" class="clickable">
+        dimensional.me
+      </a>{" "}
+      (use this{" "}
+      <a
+        href="https://recommenddimensional.page.link/xDKfjkjMuuSdtYZ27"
+        class="clickable"
+      >
+        link
+      </a>{" "}
+      to make your own!)
+      <br />
+      <br />
       <img
         src="/images/tests/togetic.png"
         alt="togetic"
