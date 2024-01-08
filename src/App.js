@@ -8,6 +8,7 @@ import QuinnAI from "./pages/QuinnAI";
 import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
 import NYC from "./pages/blogs/NYC";
 import Google from "./pages/blogs/Google";
+import Cooking from "./pages/blogs/Cooking-Guide";
 import Log from "./pages/Log";
 import Blog from "./pages/blogs/Blogs";
 import Tests from "./pages/Tests";
@@ -89,6 +90,7 @@ function BlogRoutes() {
             <Route path="quinn-ai" element={<AboutQuinnAI />} />
             <Route path="nyc" element={<NYC />} />
             <Route path="google" element={<Google />} />
+            <Route path="cooking-guide" element={<Cooking />} />
           </Routes>
           <Footer />
         </div>
