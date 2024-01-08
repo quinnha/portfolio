@@ -18,8 +18,13 @@ function Blog() {
       <hr class="dashed"></hr>
 
       <h3>
-        <NavLink to="/blogs/quinn-ai" class="clickable">
-          <u>quinn ai</u>
+        <NavLink to="/blogs/cooking-guide" class="clickable">
+          <u>quinn's cooking guide</u>
+        </NavLink>{" "}
+      </h3>
+      <h3>
+        <NavLink to="/blogs/google" class="clickable">
+          <u>a summer with google</u>
         </NavLink>{" "}
       </h3>
       <h3>
@@ -28,8 +33,8 @@ function Blog() {
         </NavLink>{" "}
       </h3>
       <h3>
-        <NavLink to="/blogs/google" class="clickable">
-          <u>a summer with google</u>
+        <NavLink to="/blogs/quinn-ai" class="clickable">
+          <u>quinn ai</u>
         </NavLink>{" "}
       </h3>
     </div>

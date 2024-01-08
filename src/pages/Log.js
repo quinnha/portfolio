@@ -28,6 +28,13 @@ function Log() {
       </p>
       <hr class="dashed"></hr>
       <p>
+        <b>Jan 2024</b>
+        <br />-{" "}
+        <NavLink to="/blogs/cooking-guide" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        quinn's cooking guide
+        <br /> <br />
         <b>Aug 2023</b>
         <br />-{" "}
         <NavLink to="/blogs/nyc" class="clickable">
