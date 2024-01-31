@@ -34,7 +34,6 @@ function Log() {
           <u>[blog]</u>
         </NavLink>{" "}
         exploration, hidden gems, and gatekeeping
-        <br /> <br />
         <br />-{" "}
         <NavLink to="/blogs/cooking-guide" class="clickable">
           <u>[blog]</u>
