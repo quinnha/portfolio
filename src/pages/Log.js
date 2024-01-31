@@ -1,14 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BlogNavBar from "../components/blog_navbar";
+import ImageHoverCard from "../components/image_hover_card";
+import { Helmet } from "react-helmet";
 
 function Log() {
   useEffect(() => {
     document.title = "quinn's log (/ω＼)";
+    document.metaDescription = "test";
   }, []);
 
   return (
     <div>
+      <Helmet>
+        <meta name="description" content="quinn's logbook" />
+      </Helmet>
       <div class="flex-container" id="blog_header_card">
         <h1 id="blog_header">logbook</h1>
         <BlogNavBar></BlogNavBar>
@@ -22,16 +28,54 @@ function Log() {
       </p>
       <hr class="dashed"></hr>
       <p>
+        <b>Jan 2024</b>
+        <br />-{" "}
+        <NavLink to="/blogs/cooking-guide" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        quinn's cooking guide
+        <br /> <br />
+        <b>Aug 2023</b>
+        <br />-{" "}
+        <NavLink to="/blogs/nyc" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        a nyc summer
+        <br />-{" "}
+        <NavLink to="/blogs/google" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        a summer with google
+        <br />- went viral on{" "}
+        <a
+          href="https://twitter.com/qvinnh/status/1688944756422836224?s=20"
+          class="clickable"
+          target="_blank"
+        >
+          twitter
+        </a>
+      </p>
+      <p>
         <b>July 2023</b>
         <br />- broke staging lol
+        <br />- saw a baseball game in ny :)
+        <br />- visited <ImageHoverCard
+          text="sf"
+          imageSrc={"/images/sf.png"}
+        />{" "}
+        and the <ImageHoverCard text="bay area" imageSrc={"/images/bay.png"} />{" "}
+        for the first time!
       </p>
       <p>
         <b>June 2023</b>
-        <br />- survived new york smog
+        <br />- survived new york{" "}
+        <ImageHoverCard text="smog" imageSrc={"/images/smog.png"} />{" "}
+        <nobr>(ºΔº)</nobr>
       </p>
       <p>
         <b>May 2023</b>
-        <br />- started working at google on their editors accessibility team!
+        <br />- started working at google on their editors accessibility team
+        <nobr>ヽ(・∀・)ﾉ</nobr>
         <br />- moved to nyc for the summer
       </p>
       <p>
@@ -55,44 +99,20 @@ function Log() {
       <p>
         <b>Jul 2022</b>
         <br />- biked my first century mile with the same{" "}
-        <a
-          href="https://drive.google.com/file/d/1dPwGpZJknoUPU1Zs1dpznACSvXc1Gi3X/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          {" "}
-          friends
-        </a>{" "}
-        (toronto -> niagara falls)
+        <ImageHoverCard text="friends" imageSrc={"/images/bikers.png"} />{" "}
+        (toronto -&gt; niagara falls)
       </p>
       <p />
       <p>
         <b>June 2022</b>
         <br />- biked 75km for brain health with my{" "}
-        <a
-          href="https://drive.google.com/file/d/1rkkK23D3LUkAjelRNXAt44An62fTy8Yo/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          {" "}
-          friends
-        </a>{" "}
-        <a
-          href="https://drive.google.com/file/d/1G2brPXKw2-oQ23RAYhRiQN0tVGwJKypH/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          (i ate a banana on a highway) <br />
-        </a>{" "}
-        - went to{" "}
-        <a
-          href="https://drive.google.com/file/d/1hVKzTT2HGtg2N3miy8BPZ9QZRvV3iY3N/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          vancouver
-        </a>
-        !
+        <ImageHoverCard text="friends" imageSrc={"/images/friends.png"} />{" "}
+        <ImageHoverCard
+          text="(i at a banana on the highway)"
+          imageSrc={"/images/banana.png"}
+        />{" "}
+        <br />- went to{" "}
+        <ImageHoverCard text="vancouver" imageSrc={"/images/vancouver.png"} />!
       </p>
       <p />
       <p>
@@ -103,26 +123,20 @@ function Log() {
         <p />
         <b> Feb 2022</b>
         <br />- snowboarded the{" "}
-        <a
-          href="https://drive.google.com/file/d/1M3RcbdvrYDcF3NRVY9fixUQB-8SQcdWJ/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          west coast
-        </a>{" "}
+        <ImageHoverCard
+          text="west coast"
+          imageSrc={"/images/snowboarding.png"}
+        />{" "}
         for the first time
       </p>
       <p>
         <p />
         <b> Aug 2021</b>
         <br />- hiked{" "}
-        <a
-          href="https://drive.google.com/file/d/10h2fZjXDGq4VY4UQ7ppgTgjP2peW4x-_/view?usp=sharing"
-          class="clickable"
-          target="_blank"
-        >
-          lake garibaldi
-        </a>{" "}
+        <ImageHoverCard
+          text="lake garibaldi"
+          imageSrc={"/images/garibaldi.png"}
+        />
         (first big hike)
       </p>
       <p />

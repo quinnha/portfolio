@@ -5,15 +5,17 @@
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
+  --box-shadow: rgba(0, 0, 0, 0.3)
 }
 
 .sun {
   --background-primary: #E2FDFF;
   --color-primary: black;
-  --color-secondary: rgb(55, 55, 55);
+  --color-secondary: rgb(66, 66, 66);
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
+  --box-shadow: rgba(0,0,0,0.3)
 }
 
 .moon {
@@ -23,6 +25,7 @@
   --color-dash: #E2FDFF;
   --background-reverse: #E2FDFF;
   --color-reverse: black;
+  --box-shadow: rgba(255, 255, 255, 0.3)
 }
 
 html {
@@ -34,6 +37,10 @@ h1,
 h2,
 p {
   color: var(--color-primary);
+}
+
+h4 {
+  color: var(--color-secondary);
 }
 
 textarea{
@@ -224,4 +231,13 @@ a:hover,
   text-align: right;
   align-self: flex-start;
   margin-top: -5px;
+}
+
+.box{
+  outline: 2px solid var(--color-primary);
+}
+
+.food{
+  width: 75%;
+  height: 75%;
 }
