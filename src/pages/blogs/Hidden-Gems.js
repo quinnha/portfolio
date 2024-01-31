@@ -141,11 +141,14 @@ function HiddenGems() {
         their livelihood, many examples include barcelona, hawaii, and venice.
         these locals, are then forced to move elsewhere, for which the city
         remains an empty shell of its former self - milked of its charm and
-        personality. these masses then disrupt local ecosystems, causing immense
-        damage to beaches, jungles, etc. one popular example is everest, and the
-        heaps of waste that have been introduced (double entendre on how sherpa
-        lives have changed as a result), as well as organizations which have
-        arisen to protect the ecosystem from overuse, such as keep tahoe blue
+        personality.
+      </p>
+      <p>
+        these masses then disrupt local ecosystems, causing immense damage to
+        beaches, jungles, etc. one popular example is everest, and the heaps of
+        waste that have been introduced (double entendre on how sherpa lives
+        have changed as a result), as well as organizations which have arisen to
+        protect the ecosystem from overuse, such as keep tahoe blue
       </p>
       <p>
         on something closer to the ground, i’ve found that many restaurants
