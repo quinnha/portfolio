@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import BlogNavBar from "../../components/blog_navbar";
 import ImageHoverCard from "../../components/image_hover_card";
 import { Helmet } from "react-helmet";
 
@@ -18,15 +17,29 @@ function HiddenGems() {
         />
       </Helmet>
       <div class="flex-container" id="blog_header_card">
-        <h1 id="blog_header">exploration, hidden gems, gatekeeping</h1>
-        <BlogNavBar></BlogNavBar>
+        <h1 id="blog_header">
+          exploration, hidden gems,
+          <br /> and gatekeeping
+        </h1>
       </div>
       <p>
         born too early to explore the galaxies, born too late to explore the
-        earth, born just in time to explore the sketchy restaurant next door
+        earth, born just in time to explore the sketchy restaurant next door (
+        <ImageHoverCard text="meme" imageSrc={"/images/gems/meme1.png"} />)
       </p>
       <hr class="dashed" />
-      <p>this was written during my time at rabbitholeathon 4.0</p>
+      <p>
+        this was written during my time at rabbitholeathon 4.0. see the
+        presentation{" "}
+        <a
+          href="https://docs.google.com/presentation/d/1zSrleiz7k2av9Cfh2xGO432cjvR5xOvy5EVBM0PuOag/edit?usp=sharing"
+          target="_blank"
+          class="clickable"
+        >
+          here
+        </a>
+        , and my thoughts on rabbitholathon will go up soon!
+      </p>
       <p>
         i have this fascination that when i live somewhere for an extended
         period of time, to try to find hidden gems. i’ve always wondered about
@@ -73,6 +86,11 @@ function HiddenGems() {
         eating.”
       </h3>
       <p>
+        the venn diagram for hidden gems now looks like this: the hidden bubble
+        being a bit smaller now
+      </p>
+      <img class="venn" src="/images/gems/venn3.png" />
+      <p>
         with everything now documented online, and the rise of “influencers”,
         who care more about using experiences to gain more following, it’s
         increasingly harder to find something that hasn’t been discovered
@@ -100,11 +118,16 @@ function HiddenGems() {
         thing that makes me feel better about myself.
       </p>
       <p>
-        this obscurity is also power, and this fundamental human desire is the
-        other reason why people care about finding hidden gems. being in the
-        know feels good, and this desire for power motivates people to discover
-        hidden gems. this knowledge and power can be traded socially, in order
-        to create and maintain relationships.
+        this obscurity is also{" "}
+        <ImageHoverCard text="power" imageSrc={"/images/gems/meme3.png"} />, and
+        this fundamental human desire is the other reason why people care about{" "}
+        <ImageHoverCard
+          text="finding hidden gems"
+          imageSrc={"/images/gems/meme2.png"}
+        />
+        . being in the know feels good, and this desire for power motivates
+        people to discover hidden gems. this knowledge and power can be traded
+        socially, in order to create and maintain relationships.
       </p>
       <p>
         with great power comes great responsibility. gaslight, gatekeep,
@@ -142,11 +165,19 @@ function HiddenGems() {
         because you put in work to find it{" "}
       </p>
       <p>
-        its like geeks, mops, and sociopaths in subculture evolution (for which
-        i read during the eventm). theres an optimal ratio of geeks (people who
-        are really into the gem and contribute to make it better) to mops
-        (people who are fans, and contribute mainly financially). by maintaining
-        this balance, the gem can still thrive socially and financially.
+        its like{" "}
+        <a
+          href="https://meaningness.com/geeks-mops-sociopaths"
+          target="_blank"
+          class="clickable"
+        >
+          geeks, mops, and sociopaths in subculture evolution
+        </a>
+        (for which i read during the event). theres an optimal ratio of geeks
+        (people who are really into the gem and contribute to make it better) to
+        mops (people who are fans, and contribute mainly financially). by
+        maintaining this balance, the gem can still thrive socially and
+        financially.
       </p>
       <p>
         so were near the end now, and i’ve brought up two points on hidden gems,
@@ -178,6 +209,37 @@ function HiddenGems() {
         all the tourists seem to disappear. but when you find your hidden gem,
         be sure to gatekeep, just a little bit :)
       </p>
+      <br />
+      <p>future readings:</p>
+      <u1>
+        <li>
+          <a
+            href="https://roadbook.com/opinion/has-the-internet-killed-the-hidden-gem/"
+            target="_blank"
+            class="clickable"
+          >
+            has the internet killed the hidden gem?
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.thecut.com/2023/07/what-does-gatekeeping-mean.html"
+            target="_blank"
+            class="clickable"
+          >
+            what does gatekeeping mean?
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://medium.com/@Fustiaen/the-overused-concept-of-hidden-gem-on-tiktok-and-its-genuine-significance-94c4317b6385"
+            target="_blank"
+            class="clickable"
+          >
+            the overused concept of 'hidden gem' on tiktok
+          </a>
+        </li>
+      </u1>
     </div>
   );
 }

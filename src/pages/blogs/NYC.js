@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import BlogNavBar from "../../components/blog_navbar";
 import ImageHoverCard from "../../components/image_hover_card";
 import { Helmet } from "react-helmet";
 
@@ -16,7 +15,6 @@ function NYC() {
       </Helmet>
       <div class="flex-container" id="blog_header_card">
         <h1 id="blog_header">a nyc summer</h1>
-        <BlogNavBar></BlogNavBar>
       </div>
       <p>
         just finished a summer in nyc, and wanted to write about it!
