@@ -56,6 +56,7 @@ function Tests() {
         width="450"
         height="auto"
       />
+      <img src="/images/tests/cake.png" alt="poet" width="450" height="auto" />
       <img
         src="/images/tests/raymond.png"
         alt="raymond"
