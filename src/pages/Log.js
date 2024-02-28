@@ -30,6 +30,11 @@ function Log() {
       <p>
         <b>Jan 2024</b>
         <br />-{" "}
+        <NavLink to="/blogs/hidden-gems" class="clickable">
+          <u>[blog]</u>
+        </NavLink>{" "}
+        exploration, hidden gems, and gatekeeping
+        <br />-{" "}
         <NavLink to="/blogs/cooking-guide" class="clickable">
           <u>[blog]</u>
         </NavLink>{" "}

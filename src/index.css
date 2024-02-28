@@ -1,31 +1,31 @@
 :root {
-  --background-primary: #E2FDFF;
+  --background-primary: #e2fdff;
   --color-primary: black;
   --color-secondary: rgb(55, 55, 55);
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
-  --box-shadow: rgba(0, 0, 0, 0.3)
+  --box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .sun {
-  --background-primary: #E2FDFF;
+  --background-primary: #e2fdff;
   --color-primary: black;
   --color-secondary: rgb(66, 66, 66);
   --color-dash: #99acad;
   --background-reverse: #121212;
   --color-reverse: #f5f7fa;
-  --box-shadow: rgba(0,0,0,0.3)
+  --box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .moon {
   --background-primary: #121212;
   --color-primary: #f5f7fa;
   --color-secondary: rgb(184, 184, 184);
-  --color-dash: #E2FDFF;
-  --background-reverse: #E2FDFF;
+  --color-dash: #e2fdff;
+  --background-reverse: #e2fdff;
   --color-reverse: black;
-  --box-shadow: rgba(255, 255, 255, 0.3)
+  --box-shadow: rgba(255, 255, 255, 0.3);
 }
 
 html {
@@ -43,28 +43,28 @@ h4 {
   color: var(--color-secondary);
 }
 
-textarea{
+textarea {
   width: 100%;
   height: 1.3em;
   color: var(--color-primary);
-  background-color:var(--background-primary);
+  background-color: var(--background-primary);
   font-size: 1.25em;
   border-color: var(--color-dash);
   border-width: 0 0 2px;
-  resize:both;
+  resize: both;
   outline: 0;
   overflow: hidden;
 }
 
-textarea:focus{
-  border-color:var(--color-primary);
+textarea:focus {
+  border-color: var(--color-primary);
 }
 
-textarea::placeholder{
+textarea::placeholder {
   color: var(--color-dash);
 }
 
-input[type=submit]{
+input[type="submit"] {
   background-color: var(--background-reverse);
   color: var(--color-reverse);
   font-size: 1em;
@@ -80,7 +80,7 @@ input[type=submit]{
 body {
   background-color: var(--background-primary);
   color: var(--color-primary);
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   font-weight: 400;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -103,12 +103,11 @@ a:active,
 .theme_toggle:active {
   text-decoration: none;
   color: var(--color-primary);
-
 }
 
 a:hover,
 .theme_toggle:hover {
-  color: #9BB1FF;
+  color: #9bb1ff;
   cursor: pointer;
 }
 
@@ -117,7 +116,7 @@ a:hover,
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  min-height: calc(50vh/3);
+  min-height: calc(50vh / 3);
   /* flex-basis: calc(100%/3); */
   align-items: center;
 }
@@ -127,7 +126,7 @@ a:hover,
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  flex-basis: calc(100%/3);
+  flex-basis: calc(100% / 3);
   align-items: flex-start;
   flex-shrink: 10;
 }
@@ -139,14 +138,15 @@ a:hover,
   align-items: center;
 }
 
-#blog_header{
+#blog_header {
   margin-right: 250px;
   display: flex;
-  flex-grow: 9;
+  flex-grow: 8;
+  font-size: x-large;
 }
 
 /* make blog formatting */
-#blog{
+#blog {
   /* border: 1px solid blue; */
   height: 100%;
   margin: 0;
@@ -155,8 +155,7 @@ a:hover,
   flex-grow: 8;
   max-width: 50%;
   flex-direction: column;
-} 
-
+}
 
 #form {
   display: flex;
@@ -174,7 +173,7 @@ a:hover,
 }
 
 .nav_element {
-  color: #9BB1FF !important;
+  color: #9bb1ff !important;
 }
 
 #content {
@@ -197,7 +196,7 @@ a:hover,
 
 .clickable:hover,
 .credit:hover {
-  color: #9BB1FF !important;
+  color: #9bb1ff !important;
 }
 
 .credit,
@@ -210,7 +209,6 @@ a:hover,
   -ms-user-select: none;
   line-height: normal;
   color: var(--color-primary);
-
 }
 
 .credit_p {
@@ -222,22 +220,25 @@ a:hover,
   letter-spacing: 0.5em;
 }
 
-.disclaimer{
+.disclaimer {
   font-size: x-small;
 }
 
-.count{
+.count {
   font-size: x-small;
   text-align: right;
   align-self: flex-start;
   margin-top: -5px;
 }
 
-.box{
+.box {
   outline: 2px solid var(--color-primary);
 }
 
-.food{
-  width: 75%;
-  height: 75%;
+.food {
+  max-width: 50%;
+}
+
+.venn {
+  max-width: 100%;
 }

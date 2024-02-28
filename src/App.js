@@ -9,6 +9,7 @@ import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
 import NYC from "./pages/blogs/NYC";
 import Google from "./pages/blogs/Google";
 import Cooking from "./pages/blogs/Cooking-Guide";
+import HiddenGems from "./pages/blogs/Hidden-Gems";
 import Log from "./pages/Log";
 import Blog from "./pages/blogs/Blogs";
 import Tests from "./pages/Tests";
@@ -91,6 +92,7 @@ function BlogRoutes() {
             <Route path="nyc" element={<NYC />} />
             <Route path="google" element={<Google />} />
             <Route path="cooking-guide" element={<Cooking />} />
+            <Route path="hidden-gems" element={<HiddenGems />} />
           </Routes>
           <Footer />
         </div>
