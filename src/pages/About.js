@@ -124,6 +124,63 @@ function About() {
           </a>
         </li>
       </ul>
+      <p>
+        <b>readings</b>
+      </p>
+      some of my favourite reads:
+      <ul>
+        <li>
+          {" "}
+          <a
+            href="https://www.nytimes.com/2023/03/05/world/canada/toronto-restaurants-immigration-multiculturalism.html"
+            target="_blank"
+            class="clickable"
+          >
+            the story of multicultural canada, told in humble strip mall
+            eateries
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://emergencemagazine.org/essay/the-pleasures-of-eating/?curius=3015"
+            class="clickable"
+            target="_blank"
+          >
+            the pleasures of eating
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://meaningness.com/geeks-mops-sociopaths"
+            target="_blank"
+            class="clickable"
+          >
+            geeks, MOPs, and sociopaths in subculture evolution
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://otherinter.net/research/lore/"
+            target="_blank"
+            class="clickable"
+          >
+            the lore zone
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://paulgraham.com/greatwork.html"
+            target="_blank"
+            class="clickable"
+          >
+            how to do great work
+          </a>
+        </li>
+      </ul>
       still don't know who i am? see what a couple of{" "}
       <NavLink to="/personality-tests" class="clickable">
         <u>personality tests</u>
